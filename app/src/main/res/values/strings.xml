@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">WGU</string>
+    <string name="term">Term</string>
+    <string name="term_name">Term Name</string>
+    <string name="action_delete">Action Delete</string>
+    <string name="term_start_date">Term Start Date</string>
+    <string name="term_end_date">Term End Date</string>
+    <string name="new_term">New Term</string>
+    <string name="title_activity_term">Term</string>
+    <string name="course_start_date">Course Start Date Notification</string>
+    <string name="course_end_date">Course End Date Notification</string>
+    <string name="course_name">Course Name</string>
+    <string name="new_course">New Course</string>
+    <string name="course">Course</string>
+    <string name="mentor_name">Mentor Name</string>
+    <string name="mentor_phone_number">Mentor Phone Number</string>
+    <string name="mentor_email">Mentor Email/</string>
+    <string name="add_mentor">Add Mentor</string>
+    <string name="new_mentor">New Mentor</string>
+    <string name="mentor">Mentor</string>
+    <string name="assessment">Assessment</string>
+    <string name="add_assessment">Add Assessment</string>
+    <string name="new_assessment">New Assessment</string>
+    <string name="note">Note</string>
+    <string-array name="spinner_array">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan To Take</item>
+    </string-array>
+    <string-array name="spinner_array_assessment">
+        <item>Performance Assessment</item>
+        <item>Objective Assessment</item>
+    </string-array>
+
+    <string name="_notification_title_template">: %1$s</string>
+
+    <string name="_notification_placeholder_text_template">You said %1$s and lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel semper
+        venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis. Pellentesque
+        vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper ornare lacus. Duis
+        ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis viverra rhoncus sit amet
+        nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec tortor.
+    </string>
+
+    <string name="alarm_receiver_notification_title_template">Alarm receiver: %1$s</string>
+
+    <string name="alarm_receiver_notification_placeholder_text_template">You said %1$s and lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit
+        vel semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+    <string name="email_note">Email Note</string>
+</resources>

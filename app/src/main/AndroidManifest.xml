@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tyrel.wgu">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Term"
+            android:label="@string/title_activity_term"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tyrel.wgu.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TermEditorActivity"
+            android:label="Term"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tyrel.wgu.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Course"
+            android:label="@string/course"
+            android:parentActivityName=".TermEditorActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tyrel.wgu.TermEditorActivity" />
+        </activity>
+        <activity
+            android:name=".Mentor"
+            android:parentActivityName=".Course"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tyrel.wgu.Course" />
+        </activity>
+        <activity
+            android:name=".Assessment"
+            android:parentActivityName=".Course"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tyrel.wgu.Course" />
+        </activity>
+
+        <provider
+            android:name=".DatabaseProvider"
+            android:authorities="com.tyrel.wgu.termprovider"
+            android:exported="false" />
+
+
+        <!--new stuff testing-->
+        <!--<uses-sdk-->
+        <!--android:minSdkVersion="8"-->
+        <!--android:targetSdkVersion="17" />-->
+        <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+        <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+        <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+        <!--<uses-feature android:name="android.hardware.camera" android:required="true" />-->
+
+        <!--<service android:name="com.tyrel.wgu.MessageService"-->
+        <!--android:process=":messageService"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@mipmap/ic_launcher"-->
+        <!--android:label="messageService">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.tyrel.wgu.MessageService" />-->
+        <!--</intent-filter>-->
+        <!--</service>-->
+        <!--testing-->
+        <receiver android:name="com.tyrel.wgu.BroadcastReceiverClass">
+            <intent-filter>
+                <action android:name="com.tyrel.wgu.MessageReceiver" />
+            </intent-filter>
+        </receiver>
+        <!--<receiver android:name=".BroadcastReceiverClass" />-->
+
+    </application>
+
+</manifest>
